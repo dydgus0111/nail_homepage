@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel = "stylesheet" type = "text/css" href = "css/maincss.css">
-    <link rel = "stylesheet" type = "text/css" href = "css/Logincss.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel = "stylesheet" type = "text/css" href="css/maincss.css">
+
 </head>
 
 
@@ -18,7 +18,8 @@
 
     <!-- main !! -->
     <div class="container-fluid" style="margin-top: 5%;">
-        <div class="row">
+        <div class="row">   
+           
             <!--Nav -->
             <div class="col-sm-3">
                 <nav class="navbar sideNav">
@@ -37,13 +38,15 @@
             <div class="col-sm-8">
                 <nav class="topnav2">
                     <ul class="topnavUl2">
-                        <li><a  href="#Login" data-toggle="modal" data-target=".bs-modal-sm">Login</a></li>
-                        <li><a  href="#Register" data-toggle="modal" data-target=".bs-modal-sm">Register</a></li>
+                        <li><a data-toggle="modal" data-target="#Register">Register</a></li>
+                        <li><a data-toggle="modal" data-target="#login">Login</a></li>
                     </ul>
                 </nav>
             </div>
             <!-- End top Menu -->
 
+           
+           
             <div class="col-sm-8">
                 <!-- 메인 화면 이미지 -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -55,20 +58,138 @@
                     <!-- 이미지 -->
                     <div class="carousel-inner">
                         <div class="item active">
-                          <img src="img/main.jpg" style="width:100%; height: 500px;">
-                      </div>
-                      <div class="item">
-                          <img src="img/main2.jpg"  style="width:100%; height: 500px;">
-                      </div>
+                        <img src="img/main.jpg" style="width:100%; height: 500px;">
+                        </div>
+                        <div class="item">
+                            <img src="img/main2.jpg"  style="width:100%; height: 500px;">
+                        </div>
                   </div>
-            </div>
+                </div>
 
-            <p style="font-size: 25px;">Address 청주시 서원구 개신동 49-2 403호 | Tel. 010-7640-5362 | Kakaotalk yooni713</p>
-        </div>
+                <p style="font-size: 25px;">Address 청주시 서원구 개신동 49-2 403호 | Tel. 010-7640-5362 | Kakaotalk yooni713</p>
+            </div>
     </div>
 </div>
 
 
+<!-- Todo html login -->
+<!-- Note html login -->
+<!-- FIXME html login -->
+
+
+    <!-- Modal Register -->
+        <form action="#" method="post" id="newmember" >
+        <!--DB 수정 부분  회원가 -->
+        <div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Register</h4>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6">   
+                    <p>여기에 사진을 넣장</p>
+                    </div>
+                    <div class="col-sm-6">           
+                        <div class="modal-body form-inline">
+
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="firstnamelabel">First name</label>
+                                <input type="text" class="form-control" id="firstnameinput" aria-describedby="firstnameinput" required="">
+                            </div>
+
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="lastnamelabel">Last name</label>
+                                <input type="text" class="form-control" id="lastnameinput" aria-describedby="lastnameinput" required="">
+                            </div>
+
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="emaillabel">Email address</label>
+                                <input type="email" class="form-control" id="emailinput" aria-describedby="emailinput" required="">
+                            </div>
+
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="passwordlabel">Password</label>
+                                <input type="password" class="form-control" id="passwordinput" aria-describedby="passwordinput" required="">
+                            </div>
+
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="re-enterpasswordlabel">Re-password</label>
+                                <input type="password" class="form-control" id="re-enterpasswordinput" aria-describedby="re-enterpasswordinput" required="">
+                            </div>
+
+                            <div class="form-group has-feedback">
+                                <label class="control-label" for="postcodelabel">Postcode</label>
+                                <input type="text" class="form-control" id="postcodeinput" aria-describedby="postcodeinput">
+                            </div>
+                            <br/>
+                             <div class="form-group">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Sign up</button>
+                             </div> 
+                        </div>                        
+                    </div>       
+              </div><!-- end modal-Body -->        
+            </div>
+              </div>
+          </div>
+        <!-- end become a member modal -->
+        </form> <!-- end Form -->
+        
+        
+        
+        
+        
+        
+        <!-- Modal Login -->
+        <form id="logingform" action="#" method="post">
+            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-lg">
+
+                <div class="modal-content">
+
+                   <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Login</h4>
+                   </div>
+                   
+                    <div class="row">                 
+                        <div class="col-sm-6">   
+                        <p>여기에 사진을 넣장</p>
+                        </div>
+                    
+                        <div class="col-sm-6 form-inline">
+                                <div class="modal-body ">
+
+                                    <div class="form-group has-feedback">
+                                      <label class="control-label">Email Address</label>
+                                      <input type="email" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="Email">
+                                    </div>
+
+                                    <div class="form-group has-feedback">
+                                      <label class="control-label">Password</label>
+                                      <input type="password" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="Password">
+                                    </div>
+
+                                    <br/>
+                                        <button type="button" class="btn btn-primary">Login</button>
+                                    <br/>
+                                        <a href="#">Forgot your password?</a>
+                              </div>
+
+                              <div class="modal-footer">
+                                    <h4 class="modal-title" id="myModalLabel">Register</h4>
+                                    <a data-toggle="modal" data-target="#Register" data-dismiss="modal">register here</a>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                        </div>                   
+                    </div>
+              </div>
+            </div><!-- end become a member modal -->
+        </form> <!-- end login form -->
 
 
 </body>
