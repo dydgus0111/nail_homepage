@@ -54,6 +54,10 @@ html, body, h1, h2, h3, h4, h5, h6, li, p a{ font-family: 'Nanum Pen Script', se
 
 
 
+.topnavUl2{
+       padding-bottom: 0px;
+    margin-bottom: 0px;
+}
 /*Todo css login */
 /*Note css login */
 /*FIXME css login */
@@ -80,6 +84,15 @@ html, body, h1, h2, h3, h4, h5, h6, li, p a{ font-family: 'Nanum Pen Script', se
 }
 
 
+/* 수평선 */
+#tophr{
+    border-top:2px solid #9C9C9C;
+    border-bottom:1px solid #F6F6F6;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
 
 
 
