@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>ADER AderSpace # Shop#</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/maincss.css">
+    <link rel="stylesheet" type="text/css" href="css/in_gallerycss.css">
+    <script>
+        jQuery(document).ready(function ($) {
+            //Handles the carousel thumbnails
+            $('[id^=carousel-selector-]').click(function () {
+                var id_selector = $(this).attr("id");
+                try {
+                    var id = /-(\d+)$/.exec(id_selector)[1];
+                    console.log(id_selector, id);
+                    jQuery('#myCarousel').carousel(parseInt(id));
+                }
+                catch (e) {
+                    console.log('Regex failed!', e);
+                }
+            });
+            // When the carousel slides, auto update the text
+            $('#myCarousel').on('slid.bs.carousel', function (e) {
+                var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-' + id).html());
+            });
+        });
+    </script>
+</head>
+<!-- body -->
+
+<body>
+    <!-- main !! -->
+    <div class="container-fluid" style="margin-top: 5%;">
+        <div class="row">
+            <!--Nav -->
+            <div class="col-sm-3">
+                <nav class="navbar sideNav">
+                    <ul class="sideNavUl">
+                        <li><a href="Index.html">Gallery</a></li>
+                        <li>Review</li>
+                        <li>Reservation</li>
+                        <li>MyPage</li>
+                    </ul>
+                </nav>
+            </div>
+            <!--End Nav -->
+            <div class="col-sm-8">
+                <!-- top Menu -->
+                <nav class="topnav2">
+                    <ul class="topnavUl2">
+                        <li><a data-toggle="modal" data-target="#Register">Register</a></li>
+                        <li><a data-toggle="modal" data-target="#login">Login</a></li>
+                    </ul>
+                </nav>
+                <!-- End top Menu -->
+                <hr width="100%" id="tophr"> </div>
+            <!-- todo Gallery -->
+            <div class="col-sm-8 bg">
+               <h1> 동양문화사 과제 언제함>?</h1>
+                <div class="container">
+                    <div id="main_area">
+                        <!-- Slider -->
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="col-xs-12" id="slider">
+                                    <!-- Top part of the slider -->
+                                    <div class="row">
+                                        <div class="col-sm-12" id="carousel-bounding-box">
+                                            <div class="carousel slide" id="myCarousel">
+                                                <!-- Carousel items -->
+                                                <div class="carousel-inner">
+                                                    <div class="active item" data-slide-number="0"> <img src="img/gtopex1.jpg"></div>
+                                                    <div class="item" data-slide-number="1"> <img src="img/gtopex1.jpg"></div>
+                                                    <div class="item" data-slide-number="2"> <img src="img/gtopex1.jpg"></div>
+                                                    <div class="item" data-slide-number="3"> <img src="img/gtopex1.jpg"></div>
+                                                    <div class="item" data-slide-number="4"> <img src="img/gtopex1.jpg"></div>
+                                                    <div class="item" data-slide-number="5"> <img src="img/gtopex1.jpg"></div>
+                                                    <div class="item" data-slide-number="6"> <img src="img/gtopex1.jpg"></div>
+                                                    <div class="item" data-slide-number="7"> <img src="img/gtopex1.jpg"></div>
+                                                    <div class="item" data-slide-number="8"> <img src="img/gtopex1.jpg"></div>
+                                                    <div class="item" data-slide-number="9"> <img src="img/gtopex1.jpg"></div>
+                                                </div>
+                                                <!-- Carousel nav -->
+                                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+                                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                    <li class="col-sm-4">
+                                        <a class="thumbnail" id="carousel-selector-0"> <img src="img/gtopex1.jpg"> </a>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <a class="thumbnail" id="carousel-selector-1"><img src="img/gtopex1.jpg"></a>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <a class="thumbnail" id="carousel-selector-2"><img src="img/gtopex1.jpg"></a>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <a class="thumbnail" id="carousel-selector-3"><img src="img/gtopex1.jpg"></a>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <a class="thumbnail" id="carousel-selector-4"><img src="img/gtopex1.jpg"></a>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <a class="thumbnail" id="carousel-selector-5"><img src="img/gtopex1.jpg"></a>
+                                    </li>
+                                     <li class="col-sm-4">
+                                        <a class="thumbnail" id="carousel-selector-5"><img src="img/gtopex1.jpg"></a>
+                                    </li>
+                                     <li class="col-sm-4">
+                                        <a class="thumbnail" id="carousel-selector-5"><img src="img/gtopex1.jpg"></a>
+                                    </li>
+                                     <li class="col-sm-4">
+                                        <a class="thumbnail" id="carousel-selector-5"><img src="img/gtopex1.jpg"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Slider-->
+                        </div>
+                    </div>
+                </div>
+                <h1>여기에 설명 쓸수 있음 ..이거 가능 ?</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
