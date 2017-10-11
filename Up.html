@@ -1,0 +1,40 @@
+<HTML>
+ 
+ <HEAD>
+   <TITLE>Event</TITLE>
+   <script language=javascript>
+<!--
+function setCookie() //쿠키를 설정하는 함수입니다. 
+{
+var expire = new Date();
+expire.setDate(expire.getDate() + 30 );
+document.cookie = "popup=1; expires=" + expire.toGMTString()+ "; path=/";
+}
+function closeWin(pop_cookie,check) //팝업창을 닫는 함수입니다. 
+{
+document.write(check);
+if ( check )
+setCookie();
+self.close();
+}
+// -->
+</script>
+
+
+ </HEAD>
+
+  <BODY topmargin="20">
+       <P align="center">
+        팝업창<BR>
+       <IMG src="img/ex1.jpg">
+       </P>
+       <form name="notice">
+    <input type="checkbox" name="chkNotice" value="">
+    다음 방문시 팝업창을 띄우지 않습니다. 
+    <a href="javascript:history.onclick=closeWin('popup_200',notice.chkNotice.checked)"> 창닫기      </a> 
+    </form>
+
+
+  </BODY>
+
+</HTML>

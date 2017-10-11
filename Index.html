@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/maincss.css"> </head>
+    <link rel="stylesheet" type="text/css" href="css/maincss.css"> 
+    
+    <!--자동 팝업창-->
+    <script language="javascript">    
+        function OpenWindow()
+        {
+            window.open("Up.html","_blank",'toolbar=no, location=no, directories=no, status=no,menubar=no, scrollbars=no, resizable=no, copyhistory=no, height=300, width=300, left=40, top=70');
+            
+            window.open("Up.html","_blank",'toolbar=no, location=no, directories=no, status=no,menubar=no, scrollbars=no, resizable=no, copyhistory=yes, height=300, width=300, left=360, top=70');
+        }  
+    </script>       
+</head>
 <!-- body -->
 
-<body>
+<body onload="OpenWindow(), OpenWindow1">
     <!-- main !! -->
     <div class="container-fluid" style="margin-top: 5%;">
         <div class="row">
@@ -19,7 +30,7 @@
             <div class="col-sm-3">
                 <nav class="navbar sideNav">
                     <ul class="sideNavUl">
-                        <li>Gallery</li>
+                        li><a href="Index.html">Gallery</a></li>
                         <li>Review</li>
                         <li>Reservation</li>
                         <li>MyPage</li>
