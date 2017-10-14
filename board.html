@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>ADER AderSpace # Shop#</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/maincss.css">
+    <link rel="stylesheet" type="text/css" href="css/board.css">
+</head>
+<!-- body -->
+
+<body>
+    <!-- main !! -->
+    <div class="container-fluid" style="margin-top: 5%;">
+        <div class="row">
+            <!--Nav -->
+            <div class="col-sm-3">
+                <nav class="navbar sideNav">
+                       <ul class="sideNavUl">
+                       <li><a href="Index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="board.html">board</a></li>
+                        <li>Reservation</li>
+                        <li>MyPage</li>
+                    </ul>
+                </nav>
+            </div>
+            <!--End Nav -->
+            <div class="col-sm-8">
+                <!-- top Menu -->
+                <nav class="topnav2">
+                    <ul class="topnavUl2">
+                        <li><a data-toggle="modal" data-target="#Register">Register</a></li>
+                        <li><a data-toggle="modal" data-target="#login">Login</a></li>
+                    </ul>
+                </nav>
+                <!-- End top Menu -->
+                <hr width="100%" id="tophr">
+                
+            </div>
+            <!-- todo Gallery -->
+            <div class="col-sm-8 bg">
+                <h1 style="text-align: center">문의 게시판</h1>
+                   <table class="table table-board table-hover">
+                      <colgroup>
+                          <col width="1%">
+                          <col width="4%">
+                          <col width="1%">
+                          <col width="1%">
+                          <col width="1%">
+                      </colgroup>
+                        <tr>
+                          <th style="text-align: center">번호</th>
+                          <th style="text-align: center">제목</th>
+                          <th style="text-align: center">작성자</th>
+                          <th style="text-align: center">작성일</th>
+                          <th style="text-align: center">조희수</th>  
+                      </tr>
+                      <tr>
+                          <td >1</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                      <tr>
+                          <td >2</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                      <tr>
+                          <td >3</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                      <tr>
+                          <td >4</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                      <tr>
+                          <td >5</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                      <tr>
+                          <td >6</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                      <tr>
+                          <td >7</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                      <tr>
+                          <td >8</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                        <tr>
+                          <td >9</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                       <tr>
+                          <td >10</th>
+                          <td >나</th>
+                          <td >졸립다.</th>
+                          <td >지금은</th>
+                          <td >6시48분</th> 
+                      </tr>
+                   </table>   
+                    <div class="text-center">
+                    <ul class="pagination">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    </div>
+                     <button style="width: 100px; margin-left: 40px; font-size: 20px; float:right;" type="button" class="btn btn-success" ><a href="boardwrite.html">글쓰기</a></button>
+                
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+           <!-- Todo html login -->
+    <!-- Note html login -->
+    <!-- FIXME html login -->
+    <!-- Modal Register -->
+    <form action="#" method="post" id="newmember">
+        <!--DB 수정 부분  회원가 -->
+        <div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Register</h4> </div>
+                    <div class="row">
+                        <div class="col-sm-6 loginlogo">
+                            <img src="img/nailloge.jpg" align="center" style="width: 400px; height: 400px;"></img>
+                        </div>
+                        <div class="col-sm-6 st">
+                            <div class="modal-body form-inline">
+                                <div class="form-group has-feedback">
+                                    <label class="control-label" for="lastnamelabel">ID</label>
+                                    <input type="text" class="form-control" id="IDinput">
+                                    <button sytle="margin-left:10px;" type="button" class="btn btn-danger">중복확인</button>
+                                      </div>
+                                  <div class="form-group has-feedback">
+                                    <label class="control-label">Ps</label>
+                                    <input type="password" class="form-control" id="passwordinput" > </div>
+                                <div class="form-group has-feedback">
+                                    <label class="control-label">Re-Ps</label>
+                                    <input type="password" class="form-control" id="re-enterpasswordinput"> </div>
+                                      <div class="form-group has-feedback">
+                                    <label class="control-label" for="firstnamelabel">Name</label>
+                                    <input type="text" class="form-control" id="nameinput"> </div>
+                                   <div class="form-group has-feedback">
+                                    <label class="control-label">Email</label>
+                                    <input type="email" class="form-control" id="emailinput" > </div>
+                                    <div class="form-group has-feedback">
+                                    <label class="control-label">Phone</label>
+                                    <input type="text" class="form-control" id="phoneinput" > </div>
+                                <br/>
+                              
+                                
+                                <div class="form-group">
+                                    <button style="width: 150px; margin-left: 40px; font-size: 27px;" type="button" class="btn btn-success" >Sign up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end modal-Body -->
+                </div>
+            </div>
+        </div>
+        <!-- end become a member modal -->
+    </form>
+    <!-- endRegister  Form -->
+    
+    <!-- Modal Login -->
+    <form id="logingform" action="#" method="post">
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                         <span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Login</h4> </div>
+                    <div class="row">
+                        <div class="col-sm-6 loginlogo">
+                            <img src="img/nailloge.jpg" align="center" style="width: 300px; height: 300px;"></img>
+                        </div>
+                        <div class="col-sm-6 form-inline loginbutton">
+                            <div class="modal-body loginButton">
+                             
+                              
+                                   <div class="form-group has-feedback">
+                                    <label class="control-label">ID</label>
+                                    <input type="email" class="form-control" 
+                                    id="loginID">
+                                </div>
+                                <div class="form-group has-feedback ">
+                                    <label class="control-label">PS</label>
+                                    <input type="password" class="form-control" id="loginPS"> 
+                                </div>
+                                
+                                <br/>
+                                
+                                <button sytle="margin-left:10px;" type="button" class="btn btn-success">Login</button>
+                               
+                                
+                               
+                        <button type="button" class="btn btn-default"> ID/PS 찾기</button> 
+                                <button   type="button" class="btn btn-default" >회원가입</button>
+                                
+                            </div>
+                            <div class="modal-footer">
+                               <img src="img/Facebook.png">
+                               <img src="img/kakao.png">
+                               <img src="img/instagram.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end become a member modal -->
+    </form>
+    <!-- end login form -->
+</body>
+
+</html>
