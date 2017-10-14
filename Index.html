@@ -30,10 +30,13 @@
             <div class="col-sm-3">
                 <nav class="navbar sideNav">
                     <ul class="sideNavUl">
-                        li><a href="Index.html">Gallery</a></li>
-                        <li>Review</li>
+                           <ul class="sideNavUl">
+                       <li><a href="Index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="board.html">board</a></li>
                         <li>Reservation</li>
                         <li>MyPage</li>
+                    </ul>
                     </ul>
                 </nav>
             </div>
@@ -50,6 +53,7 @@
             </div>
             
             <!-- End top Menu -->
+            
             <div class="col-sm-8">
                 <!-- 메인 화면 이미지 -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -79,35 +83,39 @@
                 <div class="modal-content">
                     <!-- Header -->
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                         <h4 class="modal-title" id="myModalLabel">Register</h4> </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <p>여기에 사진을 넣장</p>
+                        <div class="col-sm-6 loginlogo">
+                            <img src="img/nailloge.jpg" align="center" style="width: 400px; height: 400px;"></img>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 st">
                             <div class="modal-body form-inline">
                                 <div class="form-group has-feedback">
-                                    <label class="control-label" for="firstnamelabel">First name</label>
-                                    <input type="text" class="form-control" id="firstnameinput" aria-describedby="firstnameinput" required=""> </div>
+                                    <label class="control-label" for="lastnamelabel">ID</label>
+                                    <input type="text" class="form-control" id="IDinput">
+                                    <button sytle="margin-left:10px;" type="button" class="btn btn-danger">중복확인</button>
+                                      </div>
+                                  <div class="form-group has-feedback">
+                                    <label class="control-label">Ps</label>
+                                    <input type="password" class="form-control" id="passwordinput" > </div>
                                 <div class="form-group has-feedback">
-                                    <label class="control-label" for="lastnamelabel">Last name</label>
-                                    <input type="text" class="form-control" id="lastnameinput" aria-describedby="lastnameinput" required=""> </div>
-                                <div class="form-group has-feedback">
-                                    <label class="control-label" for="emaillabel">Email address</label>
-                                    <input type="email" class="form-control" id="emailinput" aria-describedby="emailinput" required=""> </div>
-                                <div class="form-group has-feedback">
-                                    <label class="control-label" for="passwordlabel">Password</label>
-                                    <input type="password" class="form-control" id="passwordinput" aria-describedby="passwordinput" required=""> </div>
-                                <div class="form-group has-feedback">
-                                    <label class="control-label" for="re-enterpasswordlabel">Re-password</label>
-                                    <input type="password" class="form-control" id="re-enterpasswordinput" aria-describedby="re-enterpasswordinput" required=""> </div>
-                                <div class="form-group has-feedback">
-                                    <label class="control-label" for="postcodelabel">Postcode</label>
-                                    <input type="text" class="form-control" id="postcodeinput" aria-describedby="postcodeinput"> </div>
+                                    <label class="control-label">Re-Ps</label>
+                                    <input type="password" class="form-control" id="re-enterpasswordinput"> </div>
+                                      <div class="form-group has-feedback">
+                                    <label class="control-label" for="firstnamelabel">Name</label>
+                                    <input type="text" class="form-control" id="nameinput"> </div>
+                                   <div class="form-group has-feedback">
+                                    <label class="control-label">Email</label>
+                                    <input type="email" class="form-control" id="emailinput" > </div>
+                                    <div class="form-group has-feedback">
+                                    <label class="control-label">Phone</label>
+                                    <input type="text" class="form-control" id="phoneinput" > </div>
                                 <br/>
+                              
+                                
                                 <div class="form-group">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Sign up</button>
+                                    <button style="width: 150px; margin-left: 40px; font-size: 27px;" type="button" class="btn btn-success" >Sign up</button>
                                 </div>
                             </div>
                         </div>
@@ -118,34 +126,49 @@
         </div>
         <!-- end become a member modal -->
     </form>
-    <!-- end Form -->
+    <!-- endRegister  Form -->
+    
     <!-- Modal Login -->
     <form id="logingform" action="#" method="post">
         <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog  modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                         <span class="sr-only">Close</span></button>
                         <h4 class="modal-title" id="myModalLabel">Login</h4> </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <p>여기에 사진을 넣장</p>
+                        <div class="col-sm-6 loginlogo">
+                            <img src="img/nailloge.jpg" align="center" style="width: 300px; height: 300px;"></img>
                         </div>
-                        <div class="col-sm-6 form-inline">
-                            <div class="modal-body ">
-                                <div class="form-group has-feedback">
-                                    <label class="control-label">Email Address</label>
-                                    <input type="email" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="Email"> </div>
-                                <div class="form-group has-feedback">
-                                    <label class="control-label">Password</label>
-                                    <input type="password" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="Password"> </div>
+                        <div class="col-sm-6 form-inline loginbutton">
+                            <div class="modal-body loginButton">
+                             
+                              
+                                   <div class="form-group has-feedback">
+                                    <label class="control-label">ID</label>
+                                    <input type="email" class="form-control" 
+                                    id="loginID">
+                                </div>
+                                <div class="form-group has-feedback ">
+                                    <label class="control-label">PS</label>
+                                    <input type="password" class="form-control" id="loginPS"> 
+                                </div>
+                                
                                 <br/>
-                                <button type="button" class="btn btn-primary">Login</button>
-                                <br/> <a href="#">Forgot your password?</a> </div>
+                                
+                                <button sytle="margin-left:10px;" type="button" class="btn btn-success">Login</button>
+                               
+                                
+                               
+                        <button type="button" class="btn btn-default"> ID/PS 찾기</button> 
+                                <button   type="button" class="btn btn-default" >회원가입</button>
+                                
+                            </div>
                             <div class="modal-footer">
-                                <h4 class="modal-title" id="myModalLabel">Register</h4> <a data-toggle="modal" data-target="#Register" data-dismiss="modal">register here</a>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                               <img src="img/Facebook.png">
+                               <img src="img/kakao.png">
+                               <img src="img/instagram.png">
                             </div>
                         </div>
                     </div>
