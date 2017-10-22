@@ -1,0 +1,31 @@
+<html> 
+<head> 
+<title></title> 
+<head> 
+<SCRIPT language="JavaScript"> 
+<!-- 
+function setCookie( name, value, expiredays ) 
+{ 
+var todayDate = new Date(); 
+todayDate.setDate( todayDate.getDate() + expiredays ); 
+document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+} 
+
+  
+
+function closeWin() 
+{ 
+if ( document.forms[0].Notice.checked ) 
+setCookie( "Notice", "done" , 1); 
+self.close(); 
+} 
+//--> 
+</script> 
+</head> 
+<body onunload="closeWin()"> 
+<form> 
+<input type=CHECKBOX name="Notice" value="">다시 팝업 안뜸 
+<a href="javascript:window.close()">닫기</a> 
+</form> 
+</body> 
+</html> 
