@@ -23,7 +23,7 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="board.html">board</a></li>
                         <li>Reservation</li>
-                        <li>MyPage</li>
+                        <li><a href="mypage.html">MyPage</a></li>
                     </ul>
                 </nav>
             </div>
@@ -66,7 +66,8 @@
            </div>				
             </div>
         </div>
-           <!-- Todo html login -->
+ 
+     <!-- Todo html login -->
     <!-- Note html login -->
     <!-- FIXME html login -->
     <!-- Modal Register -->
@@ -77,8 +78,10 @@
                 <div class="modal-content">
                     <!-- Header -->
                     <div class="modal-header">
-                        <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                         <span class="sr-only">Close</span></button>
                         <h4 class="modal-title" id="myModalLabel">Register</h4> </div>
+                        
                     <div class="row">
                         <div class="col-sm-6 loginlogo">
                             <img src="img/nailloge.jpg" align="center" style="width: 400px; height: 400px;"></img>
@@ -106,8 +109,10 @@
                                     <label class="control-label">Phone</label>
                                     <input type="text" class="form-control" id="phoneinput" > </div>
                                 <br/>
+                              
+                                
                                 <div class="form-group">
-                                    <button style="width: 150px; margin-left: 40px; font-size: 20px;" type="button" class="btn btn-success" >Sign up</button>
+                                    <button style="width: 150px; margin-left: 40px; font-size: 27px;" type="button" class="btn btn-success" >Sign up</button>
                                 </div>
                             </div>
                         </div>
@@ -119,6 +124,7 @@
         <!-- end become a member modal -->
     </form>
     <!-- endRegister  Form -->
+    
     <!-- Modal Login -->
     <form id="logingform" action="#" method="post">
         <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -134,6 +140,8 @@
                         </div>
                         <div class="col-sm-6 form-inline loginbutton">
                             <div class="modal-body loginButton">
+                             
+                              
                                    <div class="form-group has-feedback">
                                     <label class="control-label">ID</label>
                                     <input type="email" class="form-control" 
@@ -143,10 +151,16 @@
                                     <label class="control-label">PS</label>
                                     <input type="password" class="form-control" id="loginPS"> 
                                 </div>
+                                
                                 <br/>
-                                <button sytle="margin-left:10px;" type="button" class="btn btn-success">Login</button>
-                        <button type="button" class="btn btn-default"> ID/PS 찾기</button> 
-                                <button   type="button" class="btn btn-default" >회원가입</button>
+                                
+                                <button style="margin-left: 90px;" type="button" class="btn btn-success">Login</button>
+                               
+                                
+                               
+                        <button type="button" class="btn btn-default" onclick="window.open('Id_Ps_Search.html')"> ID/PS 찾기</button> 
+                                
+                                
                             </div>
                             <div class="modal-footer">
                                <img src="img/Facebook.png">
@@ -160,5 +174,6 @@
             <!-- end become a member modal -->
     </form>
     <!-- end login form -->
+ 
 </body>
 </html>

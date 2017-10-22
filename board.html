@@ -25,7 +25,7 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="board.html">board</a></li>
                         <li>Reservation</li>
-                        <li>MyPage</li>
+                        <li><a href="mypage.html">MyPage</a></li>
                     </ul>
                 </nav>
             </div>
@@ -140,7 +140,7 @@
                         <li><a href="#">5</a></li>
                     </ul>
                     </div>
-                     <button style="width: 100px; margin-left: 40px; font-size: 20px; float:right;" type="button" class="btn btn-success" ><a href="boardwrite.html">글쓰기</a></button>
+                     <button style="width: 100px; margin-left: 40px; font-size: 20px; float:right;" type="button" class="btn btn-success" onclick="window.open('boardwrite.html')"> 글쓰기</button>
                 
                 </div>
                 
@@ -148,8 +148,7 @@
             </div>
         </div>
         
-        
-           <!-- Todo html login -->
+     <!-- Todo html login -->
     <!-- Note html login -->
     <!-- FIXME html login -->
     <!-- Modal Register -->
@@ -160,8 +159,10 @@
                 <div class="modal-content">
                     <!-- Header -->
                     <div class="modal-header">
-                        <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                         <span class="sr-only">Close</span></button>
                         <h4 class="modal-title" id="myModalLabel">Register</h4> </div>
+                        
                     <div class="row">
                         <div class="col-sm-6 loginlogo">
                             <img src="img/nailloge.jpg" align="center" style="width: 400px; height: 400px;"></img>
@@ -234,12 +235,12 @@
                                 
                                 <br/>
                                 
-                                <button sytle="margin-left:10px;" type="button" class="btn btn-success">Login</button>
+                                <button sytle="margin-left:360px;" type="button" class="btn btn-success">Login</button>
                                
                                 
                                
-                        <button type="button" class="btn btn-default"> ID/PS 찾기</button> 
-                                <button   type="button" class="btn btn-default" >회원가입</button>
+                        <button type="button" class="btn btn-default" onclick="window.open('Id_Ps_Search.html')"> ID/PS 찾기</button> 
+                                
                                 
                             </div>
                             <div class="modal-footer">
@@ -253,7 +254,8 @@
             </div>
             <!-- end become a member modal -->
     </form>
-    <!-- end login form -->
+    <!-- end login form -->       
+ 
 </body>
 
 </html>

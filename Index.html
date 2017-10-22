@@ -14,9 +14,9 @@
     <script language="javascript">    
         function OpenWindow()
         {
-            window.open("Up.html","_blank",'toolbar=no, location=no, directories=no, status=no,menubar=no, scrollbars=no, resizable=no, copyhistory=no, height=300, width=300, left=40, top=70');
+            //window.open("Up.html","_blank",'toolbar=no, location=no, directories=no, status=no,menubar=no, scrollbars=no, resizable=no, copyhistory=no, height=300, width=300, left=40, top=70');
             
-            window.open("Up.html","_blank",'toolbar=no, location=no, directories=no, status=no,menubar=no, scrollbars=no, resizable=no, copyhistory=yes, height=300, width=300, left=360, top=70');
+            //window.open("Up.html","_blank",'toolbar=no, location=no, directories=no, status=no,menubar=no, scrollbars=no, resizable=no, copyhistory=yes, height=300, width=300, left=360, top=70');
         }  
     </script>       
 </head>
@@ -35,7 +35,7 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="board.html">board</a></li>
                         <li>Reservation</li>
-                        <li>MyPage</li>
+                        <li><a href="mypage.html">MyPage</a></li>
                     </ul>
                     </ul>
                 </nav>
@@ -83,8 +83,10 @@
                 <div class="modal-content">
                     <!-- Header -->
                     <div class="modal-header">
-                        <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                         <span class="sr-only">Close</span></button>
                         <h4 class="modal-title" id="myModalLabel">Register</h4> </div>
+                        
                     <div class="row">
                         <div class="col-sm-6 loginlogo">
                             <img src="img/nailloge.jpg" align="center" style="width: 400px; height: 400px;"></img>
@@ -157,12 +159,12 @@
                                 
                                 <br/>
                                 
-                                <button sytle="margin-left:10px;" type="button" class="btn btn-success">Login</button>
+                                <button sytle="margin-left:300px;" type="button" class="btn btn-success">Login</button>
                                
                                 
                                
-                        <button type="button" class="btn btn-default"> ID/PS 찾기</button> 
-                                <button   type="button" class="btn btn-default" >회원가입</button>
+                        <button type="button" class="btn btn-default" onclick="window.open('Id_Ps_Search.html')"> ID/PS 찾기</button> 
+                                
                                 
                             </div>
                             <div class="modal-footer">

@@ -39,16 +39,21 @@
     <div class="container-fluid" style="margin-top: 5%;">
         <div class="row">
             <!--Nav -->
-            <div class="col-sm-3">
+            
+                <div class="col-sm-3">
                 <nav class="navbar sideNav">
                     <ul class="sideNavUl">
-                        <li><a href="Index.html">Gallery</a></li>
-                        <li>Review</li>
+                           <ul class="sideNavUl">
+                       <li><a href="Index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="board.html">board</a></li>
                         <li>Reservation</li>
                         <li>MyPage</li>
                     </ul>
+                    </ul>
                 </nav>
             </div>
+           
             <!--End Nav -->
             <div class="col-sm-8">
                 <!-- top Menu -->
@@ -62,7 +67,7 @@
                 <hr width="100%" id="tophr"> </div>
             <!-- todo Gallery -->
             <div class="col-sm-8 bg">
-               <h1> 동양문화사 과제 언제함>?</h1>
+               <h1> Gallery</h1>
                 <div class="container">
                     <div id="main_area">
                         <!-- Slider -->
@@ -130,10 +135,119 @@
                         </div>
                     </div>
                 </div>
-                <h1>여기에 설명 쓸수 있음 ..이거 가능 ?</h1>
+                <h1>여기에 설명 쓸수 있음 </h1>
             </div>
         </div>
     </div>
+    
+         <!-- Todo html login -->
+    <!-- Note html login -->
+    <!-- FIXME html login -->
+    <!-- Modal Register -->
+    <form action="#" method="post" id="newmember">
+        <!--DB 수정 부분  회원가 -->
+        <div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                         <span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Register</h4> </div>
+                        
+                    <div class="row">
+                        <div class="col-sm-6 loginlogo">
+                            <img src="img/nailloge.jpg" align="center" style="width: 400px; height: 400px;"></img>
+                        </div>
+                        <div class="col-sm-6 st">
+                            <div class="modal-body form-inline">
+                                <div class="form-group has-feedback">
+                                    <label class="control-label" for="lastnamelabel">ID</label>
+                                    <input type="text" class="form-control" id="IDinput">
+                                    <button sytle="margin-left:10px;" type="button" class="btn btn-danger">중복확인</button>
+                                      </div>
+                                  <div class="form-group has-feedback">
+                                    <label class="control-label">Ps</label>
+                                    <input type="password" class="form-control" id="passwordinput" > </div>
+                                <div class="form-group has-feedback">
+                                    <label class="control-label">Re-Ps</label>
+                                    <input type="password" class="form-control" id="re-enterpasswordinput"> </div>
+                                      <div class="form-group has-feedback">
+                                    <label class="control-label" for="firstnamelabel">Name</label>
+                                    <input type="text" class="form-control" id="nameinput"> </div>
+                                   <div class="form-group has-feedback">
+                                    <label class="control-label">Email</label>
+                                    <input type="email" class="form-control" id="emailinput" > </div>
+                                    <div class="form-group has-feedback">
+                                    <label class="control-label">Phone</label>
+                                    <input type="text" class="form-control" id="phoneinput" > </div>
+                                <br/>
+                              
+                                
+                                <div class="form-group">
+                                    <button style="width: 150px; margin-left: 40px; font-size: 27px;" type="button" class="btn btn-success" >Sign up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end modal-Body -->
+                </div>
+            </div>
+        </div>
+        <!-- end become a member modal -->
+    </form>
+    <!-- endRegister  Form -->
+    
+    <!-- Modal Login -->
+    <form id="logingform" action="#" method="post">
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                         <span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Login</h4> </div>
+                    <div class="row">
+                        <div class="col-sm-6 loginlogo">
+                            <img src="img/nailloge.jpg" align="center" style="width: 300px; height: 300px;"></img>
+                        </div>
+                        <div class="col-sm-6 form-inline loginbutton">
+                            <div class="modal-body loginButton">
+                             
+                              
+                                   <div class="form-group has-feedback">
+                                    <label class="control-label">ID</label>
+                                    <input type="email" class="form-control" 
+                                    id="loginID">
+                                </div>
+                                <div class="form-group has-feedback ">
+                                    <label class="control-label">PS</label>
+                                    <input type="password" class="form-control" id="loginPS"> 
+                                </div>
+                                
+                                <br/>
+                                
+                                <button style="margin-left: 90px;" type="button" class="btn btn-success">Login</button>
+                               
+                                
+                               
+                        <button type="button" class="btn btn-default" onclick="window.open('Id_Ps_Search.html')"> ID/PS 찾기</button> 
+                                
+                                
+                            </div>
+                            <div class="modal-footer">
+                               <img src="img/Facebook.png">
+                               <img src="img/kakao.png">
+                               <img src="img/instagram.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end become a member modal -->
+    </form>
+    <!-- end login form -->
+ 
 </body>
 
 </html>
